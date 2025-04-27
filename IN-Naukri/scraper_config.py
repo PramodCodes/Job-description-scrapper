@@ -3,7 +3,7 @@ Configuration settings for the Naukri scraper.
 """
 
 # --- Search Settings ---
-KEYWORD = "sre" # <<< SET YOUR PRIMARY SEARCH KEYWORD HERE
+KEYWORD = "kubernetes" # <<< SET YOUR PRIMARY SEARCH KEYWORD HERE
 CTC_FILTERS = [
             #    "0to3", 
             #    "3to6", 
@@ -22,7 +22,7 @@ EXPERIENCE = "6" # Adjust experience if needed
 
 # --- API Settings ---
 BASE_URL = "https://www.naukri.com/jobapi/v3/search"
-MAX_PAGES_PER_FILTER = 500 # Limit pages for testing, original was 400
+MAX_PAGES_PER_FILTER = 1000 # Limit pages for testing, original was 400
 REQUEST_TIMEOUT = 45 # seconds
 FETCH_DELAY_BASE = 2.5 # seconds base delay between requests
 FETCH_DELAY_RANDOM = 2.0 # seconds random component for delay
